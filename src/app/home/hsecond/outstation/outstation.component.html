@@ -1,0 +1,37 @@
+<h3>Outstation Cab Booking</h3>
+
+<form>
+  <label>Pickup City</label>
+  <input type="text" placeholder="Enter Your Pickup City" />
+
+  <label>Drop City</label>
+  <input type="text" placeholder="Enter Your Drop City" />
+
+  <label>Pick-Up Date</label>
+  <input type="date" />
+  <label>Pick-Up Time</label>
+  <input type="time" />
+   <label>Contact Number</label>
+  <input type="text" placeholder="Contact Number" />
+
+  <div class="return-toggle">
+  <label>Return Trip</label>
+  <button type="button" (click)="isReturnTrip = !isReturnTrip">
+    {{ isReturnTrip ? 'X' : 'Return' }}
+  </button>
+</div>
+
+<div *ngIf="isReturnTrip">
+  <label>Return Date</label>
+  <input type="date" />
+</div>
+
+
+
+
+ 
+
+  <div class="form-action">
+    <button type="submit">Send Enquiry</button>
+  </div>
+</form>

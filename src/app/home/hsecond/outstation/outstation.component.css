@@ -1,0 +1,84 @@
+form {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7); /* Light cyan to lavender */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #c5d6e7;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #34495e;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6c5ce7;
+  background-color: #f3f3f3;
+}
+
+.return-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.return-toggle label {
+  margin: 0;
+}
+
+.return-toggle button {
+  padding: 6px 14px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.return-toggle button:hover {
+  background-color: #4834d4;
+}
+
+.form-action {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.form-action button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-action button:hover {
+  background-color: #1e8449;
+}
