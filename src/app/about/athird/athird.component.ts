@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AthirdComponent {
   constructor(private router:Router){}
-goto(){
-  this.router.navigate(['/forms'])
+goto(id:string){
+  this.router.navigate([`/forms/${id}`])
 }
 }
