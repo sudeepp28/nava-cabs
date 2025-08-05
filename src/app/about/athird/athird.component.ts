@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-athird',
@@ -7,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './athird.component.css'
 })
 export class AthirdComponent {
-
+  constructor(private router:Router){}
+goto(){
+  this.router.navigate(['/forms'])
+}
 }

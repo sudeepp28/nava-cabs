@@ -81,6 +81,24 @@
   color: transparent;
   line-height: 1.4;
 }
+.con1 button,
+.con2 button{
+     background-color: #FFD700; /* bright yellow */
+  color: #000; /* black text for contrast */
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.con1 button:hover,
+.con2 button:hover{
+    background-color: #ffc800; /* slightly darker yellow on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 768px) {
   .con1,
@@ -93,5 +111,9 @@
   .con2 div {
     width: 90%;
     max-width: 90%;
+  }
+  button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
   }
 }

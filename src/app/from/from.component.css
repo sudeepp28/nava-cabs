@@ -1,14 +1,47 @@
+.con {
+  height: 40vh;
+  background-image: url('/assets/banner.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
 
+.con::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.con h1 {
+  color: white;
+  margin-left: 5%;
+  font-size: 45px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Main Section */
 .main {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
-   background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  background: linear-gradient(to bottom right, #0f172a, #1e293b);
   position: relative;
-overflow-y: scroll;
-scrollbar-width: none;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
+/* Left Image Panel */
 .img {
   flex: 1 1 40%;
   display: flex;
@@ -16,29 +49,35 @@ scrollbar-width: none;
   align-items: center;
   padding: 1rem;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .img img {
   max-width: 100%;
-  height:auto;
+  height: auto;
   border-radius: 10px;
 }
 
-.con {
+.img h2 {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Right Content Panel */
+.content {
   flex: 1 1 60%;
-  position: relative;
-  min-height: 100vh;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
   z-index: 1;
- 
 }
 
-
+/* Blurred Floating Background Effects */
 .main::before,
 .main::after {
   content: '';
@@ -76,6 +115,7 @@ scrollbar-width: none;
   }
 }
 
+/* Form Toggle Buttons */
 .form-toggle-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -112,33 +152,32 @@ scrollbar-width: none;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
+/* Form container */
 .form-container {
   width: 100%;
   max-width: 600px;
   z-index: 10;
 }
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
-    width: 100%;
   }
 
-  .img,
-  .con {
+  .img, .content {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
   }
-  .img{
-    border-bottom: 1px solid black;
+
+  .img {
+    border-bottom: 1px solid #000;
   }
 
   .img img {
     width: 100%;
-    max-width: 100%;
     height: auto;
     object-fit: contain;
     display: block;
   }
 }
-
