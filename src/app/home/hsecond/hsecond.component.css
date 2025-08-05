@@ -1,4 +1,28 @@
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+   background: linear-gradient(to bottom right, #0f172a, #1e293b);
+  position: relative;
+}
+
+.img {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img img {
+  max-width: 100%;
+  height:auto;
+  border-radius: 10px;
+}
+
 .con {
+  flex: 1 1 60%;
   position: relative;
   min-height: 100vh;
   padding: 2rem 1rem;
@@ -8,11 +32,12 @@
   justify-content: flex-start;
   overflow: hidden;
   z-index: 1;
-  background: linear-gradient(to bottom right, #0f172a, #1e293b);
+ 
 }
 
-.con::before,
-.con::after {
+
+.main::before,
+.main::after {
   content: '';
   position: absolute;
   border-radius: 50%;
@@ -23,7 +48,7 @@
   animation: float 12s ease-in-out infinite;
 }
 
-.con::before {
+.main::before {
   width: 400px;
   height: 400px;
   top: -100px;
@@ -31,7 +56,7 @@
   background: radial-gradient(circle, #ffd700, transparent);
 }
 
-.con::after {
+.main::after {
   width: 500px;
   height: 500px;
   bottom: -150px;
@@ -88,4 +113,18 @@
   width: 100%;
   max-width: 600px;
   z-index: 10;
+}
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .img,
+  .con {
+    flex: 1 1 100%;
+  }
+
+  .img img {
+    max-width: 80%;
+  }
 }
