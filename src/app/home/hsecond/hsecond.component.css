@@ -117,14 +117,22 @@
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
+    width: 100%;
   }
 
   .img,
   .con {
-    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   .img img {
-    max-width: 80%;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
 }
+
