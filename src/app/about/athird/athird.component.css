@@ -76,7 +76,7 @@
   background: linear-gradient(to right, #e3fa11, #e2dcdc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 5px #e3fa11;
+  /* text-shadow: 0 0 5px #e3fa11; */
   background-clip: text; /* for newer browsers */
   color: transparent;
   line-height: 1.4;
