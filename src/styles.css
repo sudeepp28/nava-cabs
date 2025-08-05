@@ -10,10 +10,17 @@ body {
    background: linear-gradient(to bottom, #03e2ffce, #000000);
    overflow-x: hidden; 
 }
-html, body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   width: 100%;
+  height: auto;
+  font-family: 'Segoe UI', sans-serif;
   overflow-x: hidden;
+ 
 }
 
