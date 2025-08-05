@@ -14,12 +14,17 @@ import { CarRentalComponent } from "./home/hsecond/car-rental/car-rental.compone
 import { AirportTaxiComponent } from "./home/hsecond/airport-taxi/airport-taxi.component";
 import { CityRidesComponent } from "./home/hsecond/city-rides/city-rides.component";
 import { HthirdComponent } from "./home/hthird/hthird.component";
+import { SidebarComponent } from "./sidebar/sidebar.component";
+import { AboutComponent } from "./about/about.component";
+import { AfirstComponent } from "./about/afirst/afirst.component";
+import { AsecondComponent } from "./about/asecond/asecond.component";
+import { AthirdComponent } from "./about/athird/athird.component";
 
 
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent ],
+       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

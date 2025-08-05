@@ -1,0 +1,33 @@
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.con img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 600px; /* optional: limit height on large screens */
+}
+
+.con .text {
+  padding: 2rem 1rem;
+  max-width: 100%;
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+  color: #fbfbfc;
+}
+
+.con .text strong {
+  color: #eaf820;
+  font-size: 1.3rem;
+}
+
