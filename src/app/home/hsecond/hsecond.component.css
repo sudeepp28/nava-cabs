@@ -2,7 +2,7 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  min-height: 100vh;
+  /* min-height: 100vh; */
    background: linear-gradient(to bottom right, #0f172a, #1e293b);
   position: relative;
 /* overflow-y: scroll; */

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AboutData } from '../../aboutData';
 
 @Component({
@@ -12,10 +12,13 @@ export class AdetailComponent implements OnInit{
   data=AboutData
   selectedId:any
   selectedData:any
-constructor(private route: ActivatedRoute){
+constructor(private route: ActivatedRoute,private router:Router){
 
 }
 
+goto(id:string){
+  this.router.navigate([`/forms/${id}`])
+}
 ngOnInit(): void {
   this.selectedId=this.route.snapshot.paramMap.get('id')
   console.log(this.selectedId)
