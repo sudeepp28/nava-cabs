@@ -1,5 +1,5 @@
 .con {
-  height: 40vh;
+  min-height: 40vh;
   background-image: url('/assets/banner.jpeg');
   background-position: top;
   background-repeat: no-repeat;

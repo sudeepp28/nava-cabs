@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 // import { HsecondComponent } from './home/hsecond/hsecond.component';
 import { FromComponent } from './from/from.component';
 import { AdetailComponent } from './about/adetail/adetail.component';
+import { ServiceComponent } from './service/service.component';
 
 
 
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {path:'about',component:AboutComponent},
   {path:'forms/:id',component:FromComponent},
-  {path:'aDetail/:id', component:AdetailComponent}
+  {path:'aDetail/:id', component:AdetailComponent},
+  {path:'service', component:ServiceComponent}
 ]
 
 @NgModule({

@@ -21,12 +21,16 @@ import { AsecondComponent } from "./about/asecond/asecond.component";
 import { AthirdComponent } from "./about/athird/athird.component";
 import { FromComponent } from "./from/from.component";
 import { AdetailComponent } from "./about/adetail/adetail.component";
+import { ServiceComponent } from "./service/service.component";
+import { SfirstComponent } from "./service/sfirst/sfirst.component";
+import { FooterComponent } from "./footer/footer.component";
+import { TestimonialComponent } from "./home/testimonial/testimonial.component";
 
 
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent,AdetailComponent ],
+       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent,AdetailComponent,ServiceComponent,SfirstComponent,FooterComponent,TestimonialComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

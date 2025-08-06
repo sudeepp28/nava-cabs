@@ -53,7 +53,7 @@
                 <button (click)="goto('7')">Book Now</button>
             </div>
               <div> <img src="assets/Traveller.png" alt="">
-                <h1>Tempo Traveller</h1>
+                <h1>Luxury Urbania</h1>
                 <h4> 16+1 seater</h4>
                 <p>✔ AC | ✔ Pushback seats | ✔ Professional drivers | ✔ GPS & Music system</p>
                 <button (click)="goto('8')">Book Now</button>
@@ -67,11 +67,21 @@
         </div>
     </div>
 </div>
+
+<div class="strap">
+ <h3>Popular Destinations in Karnataka We Cover</h3>
+<div >
+     <p>Explore the rich heritage, nature, and culture of Karnataka with Nava Cabs. We provide safe, comfortable, and customizable trips to:</p>
+<button>Get Enquiry</button>
+</div>
+</div>
 <div class="strip">
  @for(d of data; track d.id){
     <div (click)="goDettails(d.id)">
         <img [src]="d.src" alt="">
         <h1>{{d.h1}}</h1>
+        
+        <i class="fa-solid fa-arrow-right" style="margin-top: 1rem;"></i>
     </div>
  } 
 </div>
