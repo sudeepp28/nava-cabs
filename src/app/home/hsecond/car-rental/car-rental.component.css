@@ -57,3 +57,24 @@ input:focus {
 .form-action button:hover {
   background-color: #6c3483;
 }
+select {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  outline: none;
+  border-color: #2980b9;
+  background-color: #f0f9ff;
+}

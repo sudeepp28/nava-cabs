@@ -20,6 +20,19 @@
     <option value="PM">PM</option>
   </select>
 
+  <label>Select Vehicle</label>
+  <select name="vehicle" [(ngModel)]="vehicle" >
+   <option value="">Select</option>
+    <option value="Sedan – Toyota Etios">Sedan – Toyota Etios</option>
+    <option value="Prime Sedan - Maruti Ciaz">Prime Sedan - Maruti Ciaz</option>
+    <option value="MUV – Maruti Ertiga">MUV – Maruti Ertiga</option>
+    <option value="SUV – Toyota Innova Crysta">SUV – Toyota Innova Crysta</option>
+    <option value="Prime Suv - Toyota Hycross">Prime Suv - Toyota Hycross</option>
+    <option value="Prime Suv - Toyota Fortuner">Prime Suv - Toyota Fortuner</option>
+    <option value="Tempo Traveller">Tempo Traveller</option>
+    <option value="Luxury Urbania">Luxury Urbania</option>
+    <option value="Luxury Coaches">Luxury Coaches</option>
+  </select>
   <label>Contact Number</label>
   <input type="text" placeholder="Contact Number" name="phone" [(ngModel)]="phone" required />
 

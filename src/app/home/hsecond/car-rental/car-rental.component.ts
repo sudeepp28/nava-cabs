@@ -13,14 +13,16 @@ export class CarRentalComponent {
   time = '';
   ampm = 'AM';
   phone = '';
+  vehicle='Sedan – Toyota Etios'
 
   submitForm() {
-    const message = `Car Rental Enquiry:
-City: ${this.city}
-Pick-Up Location: ${this.pickup}
-Date: ${this.date}
-Time: ${this.time} ${this.ampm}
-Contact: ${this.phone}`;
+    const message = `*Car Rental Enquiry*:
+*City*: ${this.city}
+*Pick-Up Location*: ${this.pickup}
+*Date*: ${this.date}
+*Time*: ${this.time} ${this.ampm}
+*Contact*: ${this.phone}
+*selected Vehicle*: ${this.vehicle}`;
 
     const adminPhone = '919964758999'; // Your admin WhatsApp number
     const encodedMessage = encodeURIComponent(message);
@@ -36,5 +38,6 @@ Contact: ${this.phone}`;
     this.time = '';
     this.ampm = 'AM';
     this.phone = '';
+    this.vehicle='Sedan – Toyota Etios'
   }
 }

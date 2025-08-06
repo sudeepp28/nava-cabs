@@ -17,6 +17,7 @@ export class OutstationComponent {
   ampm = 'AM';
   contact = '';
   returnDate = '';
+  vehicle='Sedan – Toyota Etios'
 
  submitForm() {
   const adminPhone = '919964758999'; // Replace with your WhatsApp number
@@ -26,6 +27,7 @@ export class OutstationComponent {
   message += ` *Drop City:* ${this.dropCity}\n`;
   message += ` *Pickup Date:* ${this.pickupDate}\n`;
   message += ` *Pickup Time:* ${this.pickupTime} ${this.ampm}\n`;
+   message += ` *Selected Vehicle:* ${this.vehicle}\n`;
   message += ` *Contact:* ${this.contact}\n`;
 
   if (this.isReturnTrip && this.returnDate) {
@@ -49,6 +51,7 @@ export class OutstationComponent {
   this.ampm = 'AM';
   this.contact = '';
   this.returnDate = '';
+  this.vehicle='Sedan – Toyota Etios'
   this.isReturnTrip = false;
 }
 

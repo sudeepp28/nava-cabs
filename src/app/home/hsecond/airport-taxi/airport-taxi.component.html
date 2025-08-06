@@ -2,12 +2,14 @@
 
 <form (ngSubmit)="submitForm()" #rideForm="ngForm">
 
-  <label>Pickup Location</label>
-  <input type="text" placeholder="Enter Pickup Location" name="pickup" [(ngModel)]="pickup" required />
-
-  <label>Drop Location</label>
-  <input type="text" placeholder="Enter Drop Location" name="drop" [(ngModel)]="drop" required />
-
+  <label >Trip</label>
+  <select name="trip" [(ngModel)]="trip" required>
+    <option value="">Select</option>
+    <option value="Pick up from Airport">Pick up from Airport</option>
+    <option value="Drop to Airport">Drop to Airport</option>
+  </select>
+  <label>Address</label>
+  <input type="text" placeholder="Enter Address" name="pickup" [(ngModel)]="pickup" required />
   <label>Pick-Up Date</label>
   <input type="date" name="date" [(ngModel)]="date" required />
 
@@ -19,6 +21,19 @@
     <option value="" disabled selected>Select</option>
     <option value="AM">AM</option>
     <option value="PM">PM</option>
+  </select>
+     <label>Select Vehicle</label>
+  <select name="vehicle" [(ngModel)]="vehicle" >
+   <option value="">Select</option>
+    <option value="Sedan – Toyota Etios">Sedan – Toyota Etios</option>
+    <option value="Prime Sedan - Maruti Ciaz">Prime Sedan - Maruti Ciaz</option>
+    <option value="MUV – Maruti Ertiga">MUV – Maruti Ertiga</option>
+    <option value="SUV – Toyota Innova Crysta">SUV – Toyota Innova Crysta</option>
+    <option value="Prime Suv - Toyota Hycross">Prime Suv - Toyota Hycross</option>
+    <option value="Prime Suv - Toyota Fortuner">Prime Suv - Toyota Fortuner</option>
+    <option value="Tempo Traveller">Tempo Traveller</option>
+    <option value="Luxury Urbania">Luxury Urbania</option>
+    <option value="Luxury Coaches">Luxury Coaches</option>
   </select>
 
   <label>Contact Number</label>

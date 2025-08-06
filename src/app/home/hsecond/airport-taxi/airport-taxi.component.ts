@@ -13,14 +13,17 @@ export class AirportTaxiComponent {
   time = '';
   ampm = 'AM';
   phone = '';
+  trip='Pick up from Airport';
+  vehicle='Sedan – Toyota Etios'
 
   submitForm() {
-  const message = `City Ride Enquiry:
-Pickup: ${this.pickup}
-Drop: ${this.drop}
-Date: ${this.date}
-Time: ${this.time} ${this.ampm}
-Contact: ${this.phone}`;
+  const message = `*Airport Taxi Booking Enquiry*:
+*Trip*: ${this.trip}
+*Address*:${this.pickup}
+*Date*: ${this.date}
+*Pick-Up Time*: ${this.time} ${this.ampm}
+*Selected Vehicle*: ${this.vehicle}
+*Contact*: ${this.phone}`;
 
   const adminPhone = '919964758999'; // ✅ No '+'
   const encodedMessage = encodeURIComponent(message);
@@ -30,11 +33,14 @@ Contact: ${this.phone}`;
   window.open(whatsappUrl, '_blank');
 
   // Clear form
-  this.pickup = '';
-  this.drop = '';
+  
+   this. trip='Pick up from Airport';
+   this.pickup = '';
   this.date = '';
   this.time = '';
   this.ampm = 'AM';
   this.phone = '';
+  this.vehicle='Sedan – Toyota Etios'
+ 
 }
 }
