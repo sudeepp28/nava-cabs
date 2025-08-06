@@ -1,6 +1,6 @@
 <h3>Outstation Cab Booking</h3>
 
-<form (ngSubmit)="submitForm()">
+<form (ngSubmit)="submitForm()" #form="ngForm">
   <label>Pickup City</label>
   <input type="text" placeholder="Enter Your Pickup City" name="pickupCity" [(ngModel)]="pickupCity" required />
 
@@ -15,6 +15,7 @@
 
   <label>AM/PM</label>
   <select name="ampm" [(ngModel)]="ampm" required>
+    <option value="">Select</option>
     <option value="AM">AM</option>
     <option value="PM">PM</option>
   </select>
@@ -35,6 +36,6 @@
   </div>
 
   <div class="form-action">
-    <button type="submit">Send Enquiry</button>
+    <button type="submit" [disabled]="!form.valid">Send Enquiry</button>
   </div>
 </form>

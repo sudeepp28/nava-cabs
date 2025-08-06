@@ -14,7 +14,9 @@
   <label>Pick-Up Time</label>
   <input type="time" name="time" [(ngModel)]="time" required />
 
+  <label>AM/PM</label>
   <select name="ampm" [(ngModel)]="ampm" required>
+    <option value="" disabled selected>Select</option>
     <option value="AM">AM</option>
     <option value="PM">PM</option>
   </select>
@@ -23,6 +25,6 @@
   <input type="text" placeholder="Contact Number" name="phone" [(ngModel)]="phone" required />
 
   <div class="form-action">
-    <button type="submit" >Send Enquiry</button>
+    <button type="submit" [disabled]="!rideForm.valid">Send Enquiry</button>
   </div>
 </form>
