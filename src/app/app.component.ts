@@ -15,11 +15,18 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
   }
+  isPopUp=false
   issidebar=false
   openSideBar(){
     this.issidebar=true
   }
   closeSidebar(){
 this.issidebar=false
+  }
+  openPopUp(){
+    this.isPopUp=true
+  }
+  closePopUp(){
+    this.isPopUp=false
   }
 }

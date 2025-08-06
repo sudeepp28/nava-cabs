@@ -7,10 +7,13 @@
     <div class="card">
       <img [src]="point?.src" alt="">
       <h2>{{ point?.text }}</h2>
-      <button>Book Now</button>
+      <button (click)="openPopUp()">Book Now</button>
     </div>
   }
 </div>
+@if(isPopup){
+  <app-call-now (close)="closePopUp()"></app-call-now>
+}
 <div class="main">
     <div class="heading">
        <h1>Choose the Perfect Vehicle for Your Journey</h1>

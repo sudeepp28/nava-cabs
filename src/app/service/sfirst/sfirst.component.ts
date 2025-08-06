@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sfirst',
@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrl: './sfirst.component.css'
 })
 export class SfirstComponent {
-openPopup(){}
+  @Output() open=new EventEmitter()
+openPopup(){
+  this.open.emit()
+}
 }

@@ -1,23 +1,25 @@
 <h3>Car Rental Booking</h3>
-<form>
+
+<form (ngSubmit)="submitForm()" #rentalForm="ngForm">
   <label>City</label>
-  <input type="text" placeholder="Enter Your City" />
+  <input type="text" placeholder="Enter Your City" name="city" [(ngModel)]="city" required />
 
   <label>Pick-Up Location</label>
-  <input type="text" placeholder="Pick-Up Location" />
+  <input type="text" placeholder="Pick-Up Location" name="pickup" [(ngModel)]="pickup" required />
 
   <label>Pick-Up Date</label>
-  <input type="date" />
+  <input type="date" name="date" [(ngModel)]="date" required />
 
   <label>Pick-Up Time</label>
-  <input type="time" />
-   <select name="" id="">
-    <option value="">AM</option>
-    <option value="">PM</option>
+  <input type="time" name="time" [(ngModel)]="time" required />
+
+  <select name="ampm" [(ngModel)]="ampm" required>
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
   </select>
 
   <label>Contact Number</label>
-  <input type="text" placeholder="Contact Number" />
+  <input type="text" placeholder="Contact Number" name="phone" [(ngModel)]="phone" required />
 
   <div class="form-action">
     <button type="submit">Send Enquiry</button>

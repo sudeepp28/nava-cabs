@@ -1,25 +1,28 @@
 <h3>Airport Taxi Booking</h3>
-<form>
-  <label>Pickup City</label>
-  <input type="text" placeholder="Enter Your Pickup City" />
 
-  <label>Drop Airport</label>
-  <input type="text" placeholder="Enter Drop Airport" />
+<form (ngSubmit)="submitForm()" #rideForm="ngForm">
+
+  <label>Pickup Location</label>
+  <input type="text" placeholder="Enter Pickup Location" name="pickup" [(ngModel)]="pickup" required />
+
+  <label>Drop Location</label>
+  <input type="text" placeholder="Enter Drop Location" name="drop" [(ngModel)]="drop" required />
 
   <label>Pick-Up Date</label>
-  <input type="date" />
+  <input type="date" name="date" [(ngModel)]="date" required />
 
   <label>Pick-Up Time</label>
-  <input type="time" />
-   <select name="" id="">
-    <option value="">AM</option>
-    <option value="">PM</option>
+  <input type="time" name="time" [(ngModel)]="time" required />
+
+  <select name="ampm" [(ngModel)]="ampm" required>
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
   </select>
 
   <label>Contact Number</label>
-  <input type="text" placeholder="Contact Number" />
+  <input type="text" placeholder="Contact Number" name="phone" [(ngModel)]="phone" required />
 
   <div class="form-action">
-    <button type="submit">Send Enquiry</button>
+    <button type="submit" >Send Enquiry</button>
   </div>
 </form>

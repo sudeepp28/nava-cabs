@@ -25,12 +25,13 @@ import { ServiceComponent } from "./service/service.component";
 import { SfirstComponent } from "./service/sfirst/sfirst.component";
 import { FooterComponent } from "./footer/footer.component";
 import { TestimonialComponent } from "./home/testimonial/testimonial.component";
+import { CallNowComponent } from "./call-now/call-now.component";
 
 
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent,AdetailComponent,ServiceComponent,SfirstComponent,FooterComponent,TestimonialComponent ],
+       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent,AdetailComponent,ServiceComponent,SfirstComponent,FooterComponent,TestimonialComponent,CallNowComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,

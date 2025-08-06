@@ -3,4 +3,7 @@
 </div>
 <app-afirst></app-afirst>
 <app-asecond></app-asecond>
-<app-athird></app-athird>
+<app-athird (open)="openPopUp()"></app-athird>
+@if(ispopup){
+    <app-call-now (close)="closePopup()"></app-call-now>
+}

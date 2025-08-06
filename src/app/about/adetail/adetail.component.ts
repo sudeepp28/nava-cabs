@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AboutData } from '../../aboutData';
 
@@ -9,13 +9,20 @@ import { AboutData } from '../../aboutData';
   styleUrl: './adetail.component.css'
 })
 export class AdetailComponent implements OnInit{
+ 
   data=AboutData
   selectedId:any
   selectedData:any
 constructor(private route: ActivatedRoute,private router:Router){
 
 }
-
+isPopup=false
+openPopUp(){
+this.isPopup=true
+}
+closePopUp(){
+this.isPopup=false
+}
 goto(id:string){
   this.router.navigate([`/forms/${id}`])
 }

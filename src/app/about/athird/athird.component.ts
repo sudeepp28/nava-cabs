@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { AboutData } from '../../aboutData';
 
@@ -9,6 +9,7 @@ import { AboutData } from '../../aboutData';
   styleUrl: './athird.component.css'
 })
 export class AthirdComponent {
+  @Output() open=new EventEmitter()
   data:any=AboutData
   constructor(private router:Router){}
 goto(id:string){
@@ -16,5 +17,8 @@ goto(id:string){
 }
 goDettails(id:string){
   this.router.navigate([`/aDetail/${id}`])
+}
+openPopUp(){
+this.open.emit()
 }
 }

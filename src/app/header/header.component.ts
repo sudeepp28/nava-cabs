@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent {
 @Output() open=new EventEmitter()
+@Output() OpenPopup=new EventEmitter()
 
 constructor(private router:Router){}
 opensideBar(){
@@ -18,7 +19,7 @@ goTo(){
 this.router.navigate(['/'])
 }
 goContact(){
-  this.router.navigate(['/contact'])
+  this.OpenPopup.emit()
 }
 
 }

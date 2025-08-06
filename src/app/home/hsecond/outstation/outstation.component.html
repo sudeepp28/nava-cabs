@@ -1,39 +1,38 @@
 <h3>Outstation Cab Booking</h3>
 
-<form>
+<form (ngSubmit)="submitForm()">
   <label>Pickup City</label>
-  <input type="text" placeholder="Enter Your Pickup City" />
+  <input type="text" placeholder="Enter Your Pickup City" name="pickupCity" [(ngModel)]="pickupCity" required />
 
   <label>Drop City</label>
-  <input type="text" placeholder="Enter Your Drop City" />
+  <input type="text" placeholder="Enter Your Drop City" name="dropCity" [(ngModel)]="dropCity" required />
 
   <label>Pick-Up Date</label>
-  <input type="date" />
+  <input type="date" name="pickupDate" [(ngModel)]="pickupDate" required />
+
   <label>Pick-Up Time</label>
-  <input type="time" />
-  <select name="" id="">
-    <option value="">AM</option>
-    <option value="">PM</option>
+  <input type="time" name="pickupTime" [(ngModel)]="pickupTime" required />
+
+  <label>AM/PM</label>
+  <select name="ampm" [(ngModel)]="ampm" required>
+    <option value="AM">AM</option>
+    <option value="PM">PM</option>
   </select>
-   <label>Contact Number</label>
-  <input type="text" placeholder="Contact Number" />
+
+  <label>Contact Number</label>
+  <input type="text" placeholder="Contact Number" name="contact" [(ngModel)]="contact" required />
 
   <div class="return-toggle">
-  <label>Return Trip</label>
-  <button type="button" (click)="isReturnTrip = !isReturnTrip">
-    {{ isReturnTrip ? 'X' : 'Return' }}
-  </button>
-</div>
+    <label>Return Trip</label>
+    <button type="button" (click)="isReturnTrip = !isReturnTrip">
+      {{ isReturnTrip ? 'X' : 'Return' }}
+    </button>
+  </div>
 
-<div *ngIf="isReturnTrip">
-  <label>Return Date</label>
-  <input type="date" />
-</div>
-
-
-
-
- 
+  <div *ngIf="isReturnTrip">
+    <label>Return Date</label>
+    <input type="date" name="returnDate" [(ngModel)]="returnDate" />
+  </div>
 
   <div class="form-action">
     <button type="submit">Send Enquiry</button>
