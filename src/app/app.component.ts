@@ -25,8 +25,10 @@ this.issidebar=false
   }
   openPopUp(){
     this.isPopUp=true
+   
   }
   closePopUp(){
     this.isPopUp=false
+     this. closeSidebar()
   }
 }

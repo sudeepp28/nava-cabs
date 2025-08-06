@@ -3,7 +3,7 @@
 <router-outlet></router-outlet>
 
 @if(issidebar){
-    <app-sidebar (close)="closeSidebar()"></app-sidebar>
+    <app-sidebar (close)="closeSidebar()" (open)="openPopUp()"></app-sidebar>
 }
 <app-footer></app-footer>
 @if(isPopUp){

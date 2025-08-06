@@ -9,12 +9,13 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent {
 @Output() close= new EventEmitter()
+@Output() open=new EventEmitter()
 constructor(private router:Router){}
   handleClose(){
     this.close.emit()
   }
   goTo(){
-this.router.navigate(['/contact'])
-this.close.emit()
+
+this.open.emit()
   }
 }
