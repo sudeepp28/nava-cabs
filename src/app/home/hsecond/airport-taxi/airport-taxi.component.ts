@@ -14,12 +14,14 @@ export class AirportTaxiComponent {
   ampm = 'AM';
   phone = '';
   trip='Pick up from Airport';
-  vehicle='Sedan – Toyota Etios'
+  vehicle='Sedan – Toyota Etios';
+  Terminal='Terminal 1'
 
   submitForm() {
   const message = `*Airport Taxi Booking Enquiry*:
 *Trip*: ${this.trip}
 *Address*:${this.pickup}
+*Terminal*: ${this.Terminal}
 *Date*: ${this.date}
 *Pick-Up Time*: ${this.time} ${this.ampm}
 *Selected Vehicle*: ${this.vehicle}
@@ -40,7 +42,8 @@ export class AirportTaxiComponent {
   this.time = '';
   this.ampm = 'AM';
   this.phone = '';
-  this.vehicle='Sedan – Toyota Etios'
+  this.vehicle='Sedan – Toyota Etios';
+  this.Terminal='Terminal 1'
  
 }
 }

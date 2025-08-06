@@ -9,3 +9,13 @@
 @if(isPopUp){
     <app-call-now (close)="closePopUp()"></app-call-now>
 }
+
+<div style="display: flex; flex-direction: column;">
+    <a [href]="'https://wa.me/' + adminPhone.replace('+', '') + '?text=' + prefilledText"
+     target="_blank">
+    <button class="btn " ><img src="assets/wp.png" alt=""></button>
+</a>
+ <a [href]="'tel:' + adminPhone">
+    <button class="callbtn " ><img src="assets/call.png" alt=""></button>
+</a>
+</div>
