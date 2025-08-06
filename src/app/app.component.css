@@ -41,8 +41,8 @@
   z-index: 998;
   background: transparent;
   border: none;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   padding: 0;
     animation: floatWithPause 3s ease-in-out infinite;
