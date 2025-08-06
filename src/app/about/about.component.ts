@@ -7,11 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-ispopup=false
-openpopup(){
-  this.ispopup=true
-}
-closepopup(){
-  this.ispopup=false
-}
+
 }

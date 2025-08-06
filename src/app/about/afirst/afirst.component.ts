@@ -20,7 +20,7 @@ export class AfirstComponent implements OnInit, OnDestroy {
     this.intervalId = setInterval(() => {
       this.currentIndex = (this.currentIndex + 1) % this.images.length;
       this.currentImage = this.images[this.currentIndex];
-    }, 5000); // change image every 3 seconds
+    }, 3000); // change image every 3 seconds
   }
 
   ngOnDestroy() {

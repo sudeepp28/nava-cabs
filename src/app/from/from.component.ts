@@ -15,7 +15,10 @@ export class FromComponent implements OnInit{
     {id:'3',src:"assets/Ertiga.png"},
     {id:'4',src:"assets/Innova.png"},
     {id:'5',src:"assets/Hycross.png"},
-    {id:'6',src:"assets/fortuner.png"}
+    {id:'6',src:"assets/fortuner.png"},
+    {id:'7',src:'assets/Tempo.png'},
+    {id:'8',src:'assets/Traveller.png'},
+    {id:'9',src:'assets/Luxury Coaches.png'}
   ]
 
   seletedVehicleId:any

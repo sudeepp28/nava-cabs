@@ -46,6 +46,32 @@
                 <p>✔ AC | ✔ Pushback seats | ✔ Professional drivers | ✔ GPS & Music system</p>
                 <button (click)="goto('6')">Book Now</button>
             </div>
+              <div> <img src="assets/Tempo.png" alt="">
+                <h1>Tempo Traveller</h1>
+                <h4> 12+1 seater</h4>
+                <p>✔ AC | ✔ Pushback seats | ✔ Professional drivers | ✔ GPS & Music system</p>
+                <button (click)="goto('7')">Book Now</button>
+            </div>
+              <div> <img src="assets/Traveller.png" alt="">
+                <h1>Tempo Traveller</h1>
+                <h4> 16+1 seater</h4>
+                <p>✔ AC | ✔ Pushback seats | ✔ Professional drivers | ✔ GPS & Music system</p>
+                <button (click)="goto('8')">Book Now</button>
+            </div>
+              <div> <img src="assets/Luxury Coaches.png" alt="">
+                <h1>Luxury Coaches</h1>
+                <h4>21, 32, 50 Seater</h4>
+                <p>✔ AC | ✔ Pushback seats | ✔ Professional drivers | ✔ GPS & Music system</p>
+                <button (click)="goto('9')">Book Now</button>
+            </div>
         </div>
     </div>
+</div>
+<div class="strip">
+ @for(d of data; track d.id){
+    <div (click)="goDettails(d.id)">
+        <img [src]="d.src" alt="">
+        <h1>{{d.h1}}</h1>
+    </div>
+ } 
 </div>

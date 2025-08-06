@@ -1,0 +1,168 @@
+.con {
+  height: 40vh;
+  background-image: url('/assets/banner.jpeg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:120px ;
+  display: flex;
+  align-items: center;
+  
+}
+.con::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.con h1{
+    color: white;
+    margin-left: 5%;
+    font-size: 45px;
+    z-index: 4;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+ 
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  /* padding: 20px; */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  text-align: center;
+overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  /* height: 300px; */
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.4;
+  word-break: break-word;
+  margin-bottom: 12px;
+  position: absolute;
+  bottom:80px;
+ left: 50%;
+ transform: translate(-50%);
+}
+
+/* ✅ Yellow Button */
+.card button {
+  padding: 10px 20px;
+  background-color: #ffc107; /* bright yellow */
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card button:hover {
+  background-color: #e0a800; /* darker yellow on hover */
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 260px;
+  height: 350px;
+  /* padding: 16px; */
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  /* border-radius: 12px; */
+  /* margin-bottom: 10px; */
+}
+
+.card h2 {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #e0a800;
+}

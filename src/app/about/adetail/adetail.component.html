@@ -1,0 +1,14 @@
+<div class="con">
+    <h1 class="animate-on-scroll">{{selectedData?.h1}}</h1>
+</div>
+
+<div class="content">
+  @for (point of selectedData?.points; track point) {
+    <div class="card">
+      <img [src]="point?.src" alt="">
+      <h2>{{ point?.text }}</h2>
+      <button>Book Now</button>
+    </div>
+  }
+</div>
+

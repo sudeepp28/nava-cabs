@@ -20,12 +20,13 @@ import { AfirstComponent } from "./about/afirst/afirst.component";
 import { AsecondComponent } from "./about/asecond/asecond.component";
 import { AthirdComponent } from "./about/athird/athird.component";
 import { FromComponent } from "./from/from.component";
+import { AdetailComponent } from "./about/adetail/adetail.component";
 
 
 
 @NgModule({
     declarations:[AppComponent,
-       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent ],
+       HomeComponent, HeaderComponent ,HfirstComponent,HsecondComponent ,OutstationComponent ,CarRentalComponent,AirportTaxiComponent,CityRidesComponent ,HthirdComponent,SidebarComponent,AboutComponent,AfirstComponent,AsecondComponent, AthirdComponent,FromComponent,AdetailComponent ],
     bootstrap:[AppComponent],
     imports: [FormsModule,
          BrowserModule,
