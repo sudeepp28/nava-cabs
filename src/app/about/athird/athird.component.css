@@ -121,7 +121,7 @@
 .strip {
   display: flex;
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: scroll;
   padding: 10px;
   justify-content: space-evenly; /* ensures natural left alignment */
   scroll-snap-type: x mandatory;
