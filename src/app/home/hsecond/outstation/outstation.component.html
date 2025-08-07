@@ -20,6 +20,11 @@
 
   <label>Pick-Up Time</label>
   <input type="time" name="pickupTime" [(ngModel)]="pickupTime" required />
+  
+   <div *ngIf="isRoundTrip">
+    <label>Return Date</label>
+    <input type="date" name="returnDate" [(ngModel)]="returnDate" />
+  </div>
 
   <label>Select Vehicle</label>
   <select name="vehicle" [(ngModel)]="vehicle">
@@ -40,10 +45,7 @@
   <input type="text" placeholder="Contact Number" name="contact" [(ngModel)]="contact" required />
 
   <!-- Conditional Return Date -->
-  <div *ngIf="isRoundTrip">
-    <label>Return Date</label>
-    <input type="date" name="returnDate" [(ngModel)]="returnDate" />
-  </div>
+ 
 
   <div class="form-action">
     <button type="submit" [disabled]="!form.valid">Send Enquiry</button>
