@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './outstation.component.css'
 })
 export class OutstationComponent {
-  isRoundTrip: boolean = false;
+  isRoundTrip: boolean = true;
 
   // Form data fields
   pickupCity = '';

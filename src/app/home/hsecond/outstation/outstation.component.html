@@ -2,8 +2,9 @@
 
 <!-- Trip type selection -->
 <div class="trip-type">
+    <button type="button" [class.active]="isRoundTrip" (click)="isRoundTrip = true">Round Trip</button>
   <button type="button" [class.active]="!isRoundTrip" (click)="isRoundTrip = false">One Way</button>
-  <button type="button" [class.active]="isRoundTrip" (click)="isRoundTrip = true">Round Trip</button>
+
 </div>
 
 <form (ngSubmit)="submitForm()" #form="ngForm">
