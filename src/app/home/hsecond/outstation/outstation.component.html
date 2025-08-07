@@ -1,6 +1,14 @@
 <h3>Outstation Cab Booking</h3>
 
+<!-- Trip type selection -->
+<div class="trip-type">
+  <button type="button" [class.active]="!isRoundTrip" (click)="isRoundTrip = false">One Way</button>
+  <button type="button" [class.active]="isRoundTrip" (click)="isRoundTrip = true">Round Trip</button>
+</div>
+
 <form (ngSubmit)="submitForm()" #form="ngForm">
+  <h2>{{isRoundTrip? 'Round Trip':'One Way' }}</h2>
+
   <label>Pickup Address</label>
   <input type="text" placeholder="Enter Your Pickup City" name="pickupCity" [(ngModel)]="pickupCity" required />
 
@@ -13,17 +21,10 @@
   <label>Pick-Up Time</label>
   <input type="time" name="pickupTime" [(ngModel)]="pickupTime" required />
 
-  <label>AM/PM</label>
-  <select name="ampm" [(ngModel)]="ampm" required>
-    <option value="">Select</option>
-    <option value="AM">AM</option>
-    <option value="PM">PM</option>
-  </select>
-
   <label>Select Vehicle</label>
-  <select name="vehicle" [(ngModel)]="vehicle" >
-   <option value="">Select</option>
-    <option value="Sedan – Toyota Etios">Sedan – Toyota Etios</option>
+  <select name="vehicle" [(ngModel)]="vehicle">
+    <option value="">Select</option>
+    <option value="Sedan – Toyota Etios, Maruti Dezire">Sedan – Toyota Etios, Maruti Dezire</option>
     <option value="Prime Sedan - Maruti Ciaz">Prime Sedan - Maruti Ciaz</option>
     <option value="MUV – Maruti Ertiga">MUV – Maruti Ertiga</option>
     <option value="SUV – Toyota Innova Crysta">SUV – Toyota Innova Crysta</option>
@@ -33,18 +34,13 @@
     <option value="Luxury Urbania">Luxury Urbania</option>
     <option value="Luxury Coaches">Luxury Coaches</option>
   </select>
-
+  <label>Name </label>
+  <input type="text" placeholder="Name" name="name" [(ngModel)]="name" required />
   <label>Contact Number</label>
   <input type="text" placeholder="Contact Number" name="contact" [(ngModel)]="contact" required />
 
-  <div class="return-toggle">
-    <label>Return Trip</label>
-    <button type="button" (click)="isReturnTrip = !isReturnTrip">
-      {{ isReturnTrip ? 'X' : 'Return' }}
-    </button>
-  </div>
-
-  <div *ngIf="isReturnTrip">
+  <!-- Conditional Return Date -->
+  <div *ngIf="isRoundTrip">
     <label>Return Date</label>
     <input type="date" name="returnDate" [(ngModel)]="returnDate" />
   </div>

@@ -7,30 +7,31 @@ import { Component } from '@angular/core';
   styleUrl: './outstation.component.css'
 })
 export class OutstationComponent {
-  isReturnTrip = false;
+  isRoundTrip: boolean = false;
 
   // Form data fields
   pickupCity = '';
   dropCity = '';
   pickupDate = '';
   pickupTime = '';
-  ampm = 'AM';
+  name=''
   contact = '';
   returnDate = '';
-  vehicle='Sedan – Toyota Etios'
+  vehicle='Sedan – Toyota Etios, Maruti Dezire'
 
  submitForm() {
   const adminPhone = '919964758999'; // Replace with your WhatsApp number
 
-  let message = `*Outstation Cab Enquiry*\n`;
+  let message = `*Outstation Cab Enquiry* (${this.isRoundTrip ? 'Round Trip' : 'One Way'})\n`;
   message += ` *Pickup City:* ${this.pickupCity}\n`;
   message += ` *Drop City:* ${this.dropCity}\n`;
   message += ` *Pickup Date:* ${this.pickupDate}\n`;
-  message += ` *Pickup Time:* ${this.pickupTime} ${this.ampm}\n`;
+  message += ` *Pickup Time:* ${this.pickupTime}\n`;
    message += ` *Selected Vehicle:* ${this.vehicle}\n`;
+   message += ` *Name:* ${this.name}\n`;
   message += ` *Contact:* ${this.contact}\n`;
 
-  if (this.isReturnTrip && this.returnDate) {
+  if (this.isRoundTrip && this.returnDate) {
     message += ` *Return Date:* ${this.returnDate}\n`;
   }
 
@@ -48,11 +49,11 @@ export class OutstationComponent {
   this.dropCity = '';
   this.pickupDate = '';
   this.pickupTime = '';
-  this.ampm = 'AM';
+  this.name='';
   this.contact = '';
   this.returnDate = '';
-  this.vehicle='Sedan – Toyota Etios'
-  this.isReturnTrip = false;
+  this.vehicle='Sedan – Toyota Etios, Maruti Dezire'
+  this.isRoundTrip = false;
 }
 
 }

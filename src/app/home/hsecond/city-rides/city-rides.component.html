@@ -13,17 +13,12 @@
   <label>Pick-Up Time</label>
   <input type="time" name="time" [(ngModel)]="time" required />
 
-  <label>AM/PM</label>
-  <select name="ampm" [(ngModel)]="ampm" required>
-    <option value="" disabled selected>Select</option>
-    <option value="AM">AM</option>
-    <option value="PM">PM</option>
-  </select>
+
 
   <label>Select Vehicle</label>
   <select name="vehicle" [(ngModel)]="vehicle" >
    <option value="">Select</option>
-    <option value="Sedan – Toyota Etios">Sedan – Toyota Etios</option>
+    <option value="Sedan – Toyota Etios, Maruti Dezire">Sedan – Toyota Etios, Maruti Dezire</option>
     <option value="Prime Sedan - Maruti Ciaz">Prime Sedan - Maruti Ciaz</option>
     <option value="MUV – Maruti Ertiga">MUV – Maruti Ertiga</option>
     <option value="SUV – Toyota Innova Crysta">SUV – Toyota Innova Crysta</option>
@@ -33,6 +28,8 @@
     <option value="Luxury Urbania">Luxury Urbania</option>
     <option value="Luxury Coaches">Luxury Coaches</option>
   </select>
+  <label>Name </label>
+  <input type="text" placeholder="Name" name="name" [(ngModel)]="name" required />
   <label>Contact Number</label>
   <input type="text" placeholder="Contact Number" name="phone" [(ngModel)]="phone" required />
 

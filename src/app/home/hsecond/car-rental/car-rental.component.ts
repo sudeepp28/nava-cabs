@@ -11,16 +11,17 @@ export class CarRentalComponent {
   pickup = '';
   date = '';
   time = '';
-  ampm = 'AM';
   phone = '';
-  vehicle='Sedan – Toyota Etios'
+  name=''
+  vehicle='Sedan – Toyota Etios, Maruti Dezire'
 
   submitForm() {
     const message = `*Car Rental Enquiry*:
 *City*: ${this.city}
 *Pick-Up Location*: ${this.pickup}
 *Date*: ${this.date}
-*Time*: ${this.time} ${this.ampm}
+*Time*: ${this.time} 
+*Name:*${this.name}
 *Contact*: ${this.phone}
 *selected Vehicle*: ${this.vehicle}`;
 
@@ -36,8 +37,8 @@ export class CarRentalComponent {
     this.pickup = '';
     this.date = '';
     this.time = '';
-    this.ampm = 'AM';
+     this.name='';
     this.phone = '';
-    this.vehicle='Sedan – Toyota Etios'
+    this.vehicle='Sedan – Toyota Etios, Maruti Dezire'
   }
 }

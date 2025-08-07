@@ -11,10 +11,10 @@ export class AirportTaxiComponent {
   drop = '';
   date = '';
   time = '';
-  ampm = 'AM';
   phone = '';
+  name=''
   trip='Pick up from Airport';
-  vehicle='Sedan – Toyota Etios';
+  vehicle='Sedan – Toyota Etios, Maruti Dezire';
   Terminal='Terminal 1'
 
   submitForm() {
@@ -23,8 +23,9 @@ export class AirportTaxiComponent {
 *Address*:${this.pickup}
 *Terminal*: ${this.Terminal}
 *Date*: ${this.date}
-*Pick-Up Time*: ${this.time} ${this.ampm}
+*Pick-Up Time*: ${this.time}
 *Selected Vehicle*: ${this.vehicle}
+*Name*: ${this.name}
 *Contact*: ${this.phone}`;
 
   const adminPhone = '919964758999'; // ✅ No '+'
@@ -40,9 +41,9 @@ export class AirportTaxiComponent {
    this.pickup = '';
   this.date = '';
   this.time = '';
-  this.ampm = 'AM';
   this.phone = '';
-  this.vehicle='Sedan – Toyota Etios';
+  this.name='';
+  this.vehicle='Sedan – Toyota Etios, Maruti Dezire';
   this.Terminal='Terminal 1'
  
 }

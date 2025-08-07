@@ -11,17 +11,18 @@ export class CityRidesComponent {
   drop = '';
   date = '';
   time = '';
-  ampm = 'AM';
   phone = '';
-  vehicle='Sedan – Toyota Etios'
+  name=''
+  vehicle='Sedan – Toyota Etios, Maruti Dezire'
 
   submitForm() {
   const message = `*City Ride Enquiry*:
 *Pickup*: ${this.pickup}
 *Drop*: ${this.drop}
 *Date*: ${this.date}
-*Time*: ${this.time} ${this.ampm}
+*Time*: ${this.time}
 *Selected Vehicle*: ${this.vehicle}
+*Name:*${this.name}
 *Contact*: ${this.phone}`;
 
   const adminPhone = '919964758999'; // ✅ No '+'
@@ -36,8 +37,8 @@ export class CityRidesComponent {
   this.drop = '';
   this.date = '';
   this.time = '';
-  this.ampm = 'AM';
   this.phone = '';
-  this.vehicle='Sedan – Toyota Etios'
+  this.vehicle='Sedan – Toyota Etios, Maruti Dezire';
+  this.name=''
 }
 }
