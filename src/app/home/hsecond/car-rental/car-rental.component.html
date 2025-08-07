@@ -2,22 +2,27 @@
 
 <form (ngSubmit)="submitForm()" #rentalForm="ngForm">
 
-  <!-- Package Selection Radios -->
+  
 <label >Rental Package :</label>
-<div class="rental-packages" style="display: flex; gap: 20px; margin-bottom: 15px;">
-  <label>
+<!-- Package Selection Radios -->
+<div class="rental-packages">
+  <label class="radio-option">
     <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="4hrs 40kms" required />
+    <span class="custom-radio"></span>
     4hrs 40kms
   </label>
-  <label>
+  <label class="radio-option">
     <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="8hrs 80kms" />
+    <span class="custom-radio"></span>
     8hrs 80kms
   </label>
-  <label>
+  <label class="radio-option">
     <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="12hrs 120kms" />
+    <span class="custom-radio"></span>
     12hrs 120kms
   </label>
 </div>
+
 
   <label>City</label>
   <input type="text" placeholder="Enter Your City" name="city" [(ngModel)]="city" required />
