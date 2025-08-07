@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
  email: string = 'navacabservice@gmail.com';
-Registered_Office='Shivakrupa 129/1, 5th Cross Rd, Kengeri, Bengaluru, Karnataka 560060.'
+Registered_Office='SHIVAKRUPA 129/1, 5TH Cross Rd, Kengeri, Bengaluru, Karnataka 560060.'
 chamberNo='103, Civil Court, Bahadurgarh, Distt. Jhajjar, Haryana-124507.'
 gurugramOffice='Office no. 518, Deep Complex, Civil Lines, Oppo. Distt. Court,Gurugram, Haryana-1220011'
 
