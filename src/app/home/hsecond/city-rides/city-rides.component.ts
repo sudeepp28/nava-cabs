@@ -13,7 +13,7 @@ export class CityRidesComponent {
   time = '';
   phone = '';
   name=''
-  vehicle='Sedan – Toyota Etios, Maruti Dezire'
+  vehicle='Sedan – Toyota Etios, Maruti Dzire'
 
   submitForm() {
   const message = `*City Ride Enquiry*:
@@ -38,7 +38,7 @@ export class CityRidesComponent {
   this.date = '';
   this.time = '';
   this.phone = '';
-  this.vehicle='Sedan – Toyota Etios, Maruti Dezire';
+  this.vehicle='Sedan – Toyota Etios, Maruti Dzire';
   this.name=''
 }
 }

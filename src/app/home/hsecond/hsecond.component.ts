@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './hsecond.component.css'
 })
 export class HsecondComponent {
- activeForm: string = 'outstation';
+ activeForm: string = 'airport';
 
   selectForm(formName: string) {
     this.activeForm = formName;

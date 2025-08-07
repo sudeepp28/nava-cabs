@@ -17,7 +17,7 @@ export class OutstationComponent {
   name=''
   contact = '';
   returnDate = '';
-  vehicle='Sedan – Toyota Etios, Maruti Dezire'
+  vehicle='Sedan – Toyota Etios, Maruti Dzire'
 
  submitForm() {
   const adminPhone = '919964758999'; // Replace with your WhatsApp number
@@ -52,7 +52,7 @@ export class OutstationComponent {
   this.name='';
   this.contact = '';
   this.returnDate = '';
-  this.vehicle='Sedan – Toyota Etios, Maruti Dezire'
+  this.vehicle='Sedan – Toyota Etios, Maruti Dzire'
   this.isRoundTrip = false;
 }
 

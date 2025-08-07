@@ -13,7 +13,7 @@ export class CarRentalComponent {
   time = '';
   phone = '';
   name=''
-  vehicle='Sedan – Toyota Etios, Maruti Dezire'
+  vehicle='Sedan – Toyota Etios, Maruti Dzire'
 
   submitForm() {
     const message = `*Car Rental Enquiry*:
@@ -39,6 +39,6 @@ export class CarRentalComponent {
     this.time = '';
      this.name='';
     this.phone = '';
-    this.vehicle='Sedan – Toyota Etios, Maruti Dezire'
+    this.vehicle='Sedan – Toyota Etios, Maruti Dzire'
   }
 }

@@ -34,7 +34,7 @@ ngOnInit(): void {
     this.selectedVehicleImage=selectedimage?.src
   }
 }
- activeForm: string = 'outstation';
+ activeForm: string = 'airport';
 
   selectForm(formName: string) {
     this.activeForm = formName;

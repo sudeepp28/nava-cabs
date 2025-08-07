@@ -6,6 +6,12 @@
   </div>
   <div class="con">
   <div class="form-toggle-buttons" style="margin-top: 10px ;">
+     <button 
+    (click)="activeForm = 'airport'" 
+    [class.active]="activeForm === 'airport'">
+    <i class="fa-solid fa-plane"></i>
+    Airport Taxi
+  </button>
   <button 
     (click)="activeForm = 'outstation'" 
     [class.active]="activeForm === 'outstation'">
@@ -17,12 +23,6 @@
     [class.active]="activeForm === 'car'">
     <i class="fa-solid fa-car"></i>
     Car Rental
-  </button>
-  <button 
-    (click)="activeForm = 'airport'" 
-    [class.active]="activeForm === 'airport'">
-    <i class="fa-solid fa-plane"></i>
-    Airport Taxi
   </button>
   <button 
     (click)="activeForm = 'city'" 
