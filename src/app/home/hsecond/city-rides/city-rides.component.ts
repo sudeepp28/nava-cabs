@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class CityRidesComponent {
   pickup = '';
+  rentalPackage='4hrs 40kms';
   drop = '';
   date = '';
   time = '';
@@ -17,6 +18,7 @@ export class CityRidesComponent {
 
   submitForm() {
   const message = `*City Ride Enquiry*:
+  *Rental-Package:* ${this.rentalPackage}
 *Pickup*: ${this.pickup}
 *Drop*: ${this.drop}
 *Date*: ${this.date}
@@ -40,5 +42,6 @@ export class CityRidesComponent {
   this.phone = '';
   this.vehicle='Sedan – Toyota Etios, Maruti Dzire';
   this.name=''
+  this.rentalPackage=''
 }
 }

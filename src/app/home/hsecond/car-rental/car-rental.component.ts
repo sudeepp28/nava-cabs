@@ -14,9 +14,10 @@ export class CarRentalComponent {
   phone = '';
   name=''
   vehicle='Sedan – Toyota Etios, Maruti Dzire'
-
+rentalPackage='4hrs 40kms'
   submitForm() {
     const message = `*Car Rental Enquiry*:
+    *Rental-Package:* ${this.rentalPackage}
 *City*: ${this.city}
 *Pick-Up Location*: ${this.pickup}
 *Date*: ${this.date}
@@ -39,6 +40,7 @@ export class CarRentalComponent {
     this.time = '';
      this.name='';
     this.phone = '';
+    this.rentalPackage='';
     this.vehicle='Sedan – Toyota Etios, Maruti Dzire'
   }
 }

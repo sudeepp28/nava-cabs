@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AirportTaxiComponent {
  pickup = '';
-  drop = '';
+ 
   date = '';
   time = '';
   phone = '';

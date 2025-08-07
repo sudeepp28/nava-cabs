@@ -1,6 +1,24 @@
 <h3>Car Rental Booking</h3>
 
 <form (ngSubmit)="submitForm()" #rentalForm="ngForm">
+
+  <!-- Package Selection Radios -->
+<label >Rental Package :</label>
+<div class="rental-packages" style="display: flex; gap: 20px; margin-bottom: 15px;">
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="4hrs 40kms" required />
+    4hrs 40kms
+  </label>
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="8hrs 80kms" />
+    8hrs 80kms
+  </label>
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="12hrs 120kms" />
+    12hrs 120kms
+  </label>
+</div>
+
   <label>City</label>
   <input type="text" placeholder="Enter Your City" name="city" [(ngModel)]="city" required />
 

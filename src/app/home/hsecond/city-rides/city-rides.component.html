@@ -1,6 +1,22 @@
 <h3>City Rides Booking</h3>
 <form (ngSubmit)="submitForm()" #rideForm="ngForm">
 
+    
+<label >Rental Package :</label>
+<div class="rental-packages" style="display: flex; gap: 20px; margin-bottom: 15px;">
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="4hrs 40kms" required />
+    4hrs 40kms
+  </label>
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="8hrs 80kms" />
+    8hrs 80kms
+  </label>
+  <label>
+    <input type="radio" name="rentalPackage" [(ngModel)]="rentalPackage" value="12hrs 120kms" />
+    12hrs 120kms
+  </label>
+</div>
   <label>Pickup Location</label>
   <input type="text" placeholder="Enter Pickup Location" name="pickup" [(ngModel)]="pickup" required />
 
